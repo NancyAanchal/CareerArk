@@ -1,0 +1,334 @@
+import React, { useEffect } from "react";
+import "./assets/styles.css"
+import logo from "./assets/images/logo3.png";
+import img1 from "./assets/images/img1.png";
+import img2 from "./assets/images/img2.png";
+import img4 from "./assets/images/img4.png";
+import aiAssistant from "./assets/images/AIassistent.jpg";
+import freeCareerTest from "./assets/images/test.jpg";
+import resumeScanner from "./assets/images/resume.jpg";
+import reviewCollege from "./assets/images/ReviewCollege.jpg";
+import schoolLife from "./assets/images/SchoolLife.jpg";
+import collegeLife from "./assets/images/CollegeLife.jpeg";
+import studentStories from "./assets/images/StudentStories.jpg";
+import studyAbroad from "./assets/images/Studyabroad.jpg";
+import campusNews from "./assets/images/CampusNews.jpg";
+import interviewPrep from "./assets/images/Interview.jpg";
+import activeCompanies from "./assets/images/ActiveCompanies.jpg";
+import internships from "./assets/images/Internships.jpg"
+import logo1 from "./assets/images/logo1.png"
+import { useNavigate } from "react-router-dom";
+
+const Home = () => {
+    const navigate = useNavigate();
+    useEffect(() => {
+        const uploadBtn = document.getElementById("uploadBtn");
+        const fileInput = document.getElementById("fileInput");
+        const nameField = document.getElementById("nameField");
+        const emailField = document.getElementById("emailField");
+        const form = document.getElementById("form");
+        
+        const handleFileUpload = (event) => {
+          const file = event.target.files[0];
+          if (file) {
+            console.log("File uploaded:", file.name);
+          }
+        };
+      
+        const handleFormSubmit = (event) => {
+          event.preventDefault();
+          const name = nameField.value.trim();
+          const email = emailField.value.trim();
+      
+          if (name && email) {
+            console.log("Form submitted with:", { name, email });
+          } else {
+            alert("Please fill out both the name and email fields.");
+          }
+        };
+      
+        const validateEmail = () => {
+          const email = emailField.value;
+          const isValid = /\S+@\S+\.\S+/.test(email);
+          if (!isValid) {
+            alert("Please enter a valid email address.");
+          }
+        };
+      
+        if (uploadBtn && fileInput && form) {
+          const handleClick = () => fileInput.click();
+      
+         
+          uploadBtn.addEventListener("click", handleClick);
+          fileInput.addEventListener("change", handleFileUpload);
+          form.addEventListener("submit", handleFormSubmit);
+          emailField.addEventListener("blur", validateEmail);
+      
+
+          return () => {
+            uploadBtn.removeEventListener("click", handleClick);
+            fileInput.removeEventListener("change", handleFileUpload);
+            form.removeEventListener("submit", handleFormSubmit);
+            emailField.removeEventListener("blur", validateEmail);
+          };
+        }
+      }, []);
+      
+
+  return (
+    <>
+      <header className="top-header">
+        <div className="logo">
+          <img src={logo} alt="Your Career Guide Logo" width="140" height="50" />
+        </div>
+        <div className="home-button">
+          <a href="#">Home</a>
+        </div>
+        <div className="search-container">
+          <form id="search-form">
+            <input type="text" placeholder="Search for colleges, Exams, Courses and More..." />
+            <button type="submit" href="#">Search</button>
+          </form>
+        </div>
+        <div className="notification">
+          <a href="#">Notification</a>
+        </div>
+        <div className="login-signup">
+          <a href="/login">Login/Signup</a>
+        </div>
+        <div className="contact-button">
+          <a href="#">Contact</a>
+        </div>
+      </header>
+
+      <header className="bottom-header">
+        <nav>
+          <ul>
+            <li><a href="#">All Courses</a></li>
+            <li><a href="#">9th-10th</a></li>
+            <li><a href="#">11th-12th</a></li>
+            <li><a href="#">Graduate</a></li>
+            <li><a href="#">Professional</a></li>
+            <li><a href="#">Job Alert</a></li>
+            <li><a href="#">Latest Updates</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section className="section-heading">
+        <h1 className="main-heading">Shape Your Tomorrow</h1>
+        <div className="sub-heading-box">
+          <h2 className="sub-heading">Start building the future you want today</h2>
+        </div>
+      </section>
+
+      <section className="rotating-hero">
+        <div className="hero-content">
+          <img src={img1} alt="Image 1" />
+          <div className="hero-text">
+            <h1>Welcome to Your Career Guide</h1>
+            <p>Your personal AI assistant to help you choose the right career path.<br />Explore a world of opportunities and find your dream career with our guidance.</p>
+            <br />
+            <button className="button-64" role="button"><span className="text">Take the Career Test</span></button>
+          </div>
+        </div>
+        <div className="hero-content">
+          <img src={img4} alt="Image 2" />
+          <div className="hero-text">
+            <h1>Unlock Your Potential</h1>
+            <p>Assess your capabilities with our free career test.<br />Discover your strengths and interests to excel in your chosen field.</p>
+            <br />
+            <button className="button-64" role="button"><span className="text">Upload Resume</span></button>
+          </div>
+        </div>
+        <div className="hero-content">
+          <img src={img2} alt="Image 3" />
+          <div className="hero-text">
+            <h1>Explore Your Options</h1>
+            <p>Read and write reviews about colleges and universities.<br />Find the perfect educational institution for your future success.</p>
+            <br />
+            <button className="button-64" role="button"><span className="text">Review College</span></button>
+          </div>
+        </div>
+      </section>
+
+      <main className="wrapper">
+        <section className="breweries" id="breweries">
+          <ul>
+            <li>
+              <figure>
+                <img src={aiAssistant} alt="AI Assistant" />
+                <figcaption><h3>AI Assistant</h3></figcaption>
+              </figure>
+              <p>An intelligent virtual assistant that provides personalized career guidance and recommendations based on an individual's skills, interests, and goals.</p>
+              <a href="./chatbot/public/index.html">Chat with AI</a>
+            </li>
+            <li>
+              <figure>
+                <img src={freeCareerTest} alt="Free Career Test" />
+                <figcaption><h3>Free Career Test</h3></figcaption>
+              </figure>
+              <p>A tool that assesses an individual's aptitudes, interests, and strengths to help them identify suitable career paths and make informed educational and professional choices.</p>
+              <a href="./quiz/index.html">Start Test</a>
+            </li>
+            <li>
+              <figure>
+                <img src={resumeScanner} alt="Resume Scanner" />
+                <figcaption><h3>Resume Scanner</h3></figcaption>
+              </figure>
+              <p>Allows users to submit their resumes for personalized career advice and suggestions based on their qualifications and experiences.</p>
+              <a id="uploadBtn">Upload Resume</a>
+              <input type="file" id="fileInput" style={{ display: "none" }} />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <figure>
+                <img src={reviewCollege} alt="Review Your College" />
+                <figcaption><h3>Review Your College</h3></figcaption>
+              </figure>
+              <p>Allows students and alumni to submit and read reviews of the college, providing insights into campus life, academics, and overall experience.</p>
+              <a href="./login/form.html" target="_blank">Review College</a>
+            </li>
+            <li>
+              <figure>
+                <img src={freeCareerTest} alt="Read Articles" />
+                <figcaption><h3>Read Articles</h3></figcaption>
+              </figure>
+              <p>Provides access to a library of articles covering various topics, including academics, career advice, campus events, and student achievements.</p>
+              <a href="#">Read Articles</a>
+            </li>
+            <li>
+              <figure>
+                <img src={reviewCollege} alt="Need Counselling" />
+                <figcaption><h3>Need Counselling</h3></figcaption>
+              </figure>
+              <p>Offers counseling services for students to seek guidance on academic, personal, or career-related issues, promoting their well-being and success.</p>
+              <a href="#">Search Counselor</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <section className="top-articles">
+        <h2>Top Articles</h2>
+        <div className="article-container">
+          <div className="article">
+            <img src={schoolLife} alt="School Life" />
+            <div className="article-content">
+              <h3>School Life</h3>
+              <p>Explore the unforgettable memories and challenges of your school days as we delve into the joys and tribulations of growing up.</p>
+            </div>
+          </div>
+          <div className="article">
+            <img src={collegeLife} alt="College Life" />
+            <div className="article-content">
+              <h3>College Life</h3>
+              <p>Dive into the exciting world of college life, where new adventures, friendships, and opportunities await at every corner of the campus.</p>
+            </div>
+          </div>
+          <div className="article">
+            <img src={studentStories} alt="Student Stories" />
+            <div className="article-content">
+              <h3>Student Stories</h3>
+              <p>Get inspired by the real-life journeys and experiences of students who overcame obstacles and achieved their dreams against all odds.</p>
+            </div>
+          </div>
+          <div className="article">
+            <img src={studyAbroad} alt="Study Abroad" />
+            <div className="article-content">
+              <h3>Study Abroad</h3>
+              <p>Discover the excitement and challenges of studying in a foreign country as we guide you through the essential steps to prepare for this life-changing adventure.</p>
+            </div>
+          </div>
+          <div className="article">
+            <img src={campusNews} alt="Campus News" />
+            <div className="article-content">
+              <h3>Campus News</h3>
+              <p>Stay up-to-date with the latest happenings on your college campus, from student achievements to upcoming events and new initiatives.</p>
+            </div>
+          </div>
+          <div className="article">
+            <img src={interviewPrep} alt="Interview Preparation" />
+            <div className="article-content">
+              <h3>Interview Preparation</h3>
+              <p>Prepare yourself for the challenges of job interviews with expert tips, practice questions, and strategies to help you stand out from the competition.</p>
+            </div>
+          </div>
+          <div className="article">
+            <img src={activeCompanies} alt="Active Companies" />
+            <div className="article-content">
+              <h3>Active Companies</h3>
+              <p>Discover leading companies that are actively recruiting and providing exciting career opportunities for young professionals.</p>
+            </div>
+          </div>
+          <div className="article">
+                <img src={internships} alt="College Life"/>
+                <div className="article-content">
+                    <h3>Internship</h3>
+                    <p>Navigate the world of internships and gain practical experience in your field, setting the stage for a promising career ahead.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section className="career-guidance">
+        <div className="text">
+            <h2>How career guidance can help you?</h2>
+            <p>Most of the students find difficulty in choosing the right stream, course, college, or country to study. Career Counseling brings the clarity to choose the right career path.</p>
+            <p>An expert Career Counselor guides you with their professional experience, having a strong understanding of industry trends and thinking with a long-term approach which suits you the best.</p>
+            <button>Connect to a Counselor</button>
+        </div>
+        <div className="image">
+            <img src="https://i0.wp.com/www.mindgroom.com/wp-content/uploads/2021/02/Mindgroom_career_counselling_1..gif?resize=426%2C300&ssl=1" alt="Career Guidance Image"/>
+        </div>
+    </section>
+    <div>
+    
+        <div className="row">
+            <div className="col">
+                <img src={logo1} className="footer_logo"/>
+                <p className="footer_about">Welcome to MyVision, your personalized career guide powered by cutting-edge AI technology. Discover your ideal career path through insightful assessments that analyze your personality, skills, and interests. Explore comprehensive career profiles, educational opportunities, and job market insights to make informed decisions about your future.
+                </p>
+            </div>
+            <div className="col">
+                <h3>Get in Touch <div className="bottom_line"><span></span></div></h3>
+                <p>TechZone 2, Greater Noida</p>
+                <p>Uttar Pradesh, 201310</p>
+                <p className="footer_email">sharshitsingh007@gamil.com</p>
+                <h4>+91 6394441778</h4>
+            </div>
+            <div className="col">
+                <h3>Links <div className="bottom_line"><span></span></div></h3>
+                
+                    <a href="">HOME</a>
+                    <a href="">ABOUT</a>
+                    <a href="">SERVICE</a>
+                    <a href="">CONTACT US</a>
+                
+            </div>
+            <div className="col">
+                <h3>Newsletter <div className="bottom_line"><span></span></div></h3>
+                <form>
+                    <ion-icon className="icon" name="mail"></ion-icon>
+                    <input type="email" placeholder="Enter your email" required/>
+                    <button type="submit"><ion-icon className="icon_right" name="arrow-round-forward"></ion-icon></button>
+                </form>
+                <div className="social_icons">
+                    <ion-icon className="social_icon" name="logo-facebook"></ion-icon>
+                    <ion-icon className="social_icon" name="logo-whatsapp"></ion-icon>
+                    <ion-icon className="social_icon" name="logo-twitter"></ion-icon>
+                    <ion-icon className="social_icon" name="logo-instagram"></ion-icon>
+                </div>
+            </div>
+        </div>
+        
+        <p className="copyright">MyVision Ⓒ 2023 - All Rights Reserved</p>
+     
+    </div>
+
+    
+    </>
+  );
+};
+
+export default Home;
