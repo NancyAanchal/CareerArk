@@ -177,7 +177,7 @@ const Home = () => {
                 <figcaption><h3>Resume Scanner</h3></figcaption>
               </figure>
               <p>Allows users to submit their resumes for personalized career advice and suggestions based on their qualifications and experiences.</p>
-              <a id="uploadBtn">Upload Resume</a>
+              <a id="uploadBtn" href= 'https://resumescanner-p7to3payetuzsdzyvqrzsi.streamlit.app/' target="_blank">Upload Resume</a>
               <input type="file" id="fileInput" style={{ display: "none" }} />
             </li>
           </ul>
