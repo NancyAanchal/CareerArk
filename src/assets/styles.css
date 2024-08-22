@@ -487,6 +487,7 @@ footer .copyright {
 .breweries > ul > li > a {
   padding: .5rem 1rem;
   margin: .5rem;
+  cursor: pointer;
 }
 /* Add these styles to your existing CSS */
 
