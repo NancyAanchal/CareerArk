@@ -165,7 +165,7 @@ const Home = () => {
                 <figcaption><h3>Review Your College</h3></figcaption>
               </figure>
               <p>Allows students and alumni to submit and read reviews of the college, providing insights into campus life, academics, and overall experience.</p>
-              <a href="./login/form.html" target="_blank">Review College</a>
+              <a href="/Form" target="_blank">Review College</a>
             </li>
             <li>
               <figure>
