@@ -327,6 +327,15 @@ footer a:hover {
     margin-right: 10px;
 }
 
+.social_icons i {
+    font-size: 24px; 
+    margin-right: 10px; 
+}
+
+.social_icons i:last-child {
+    margin-right: 0; 
+}
+
 .col form input {
     width: 100%;
     background: transparent;
