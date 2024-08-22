@@ -20,58 +20,35 @@ import logo1 from "./assets/images/logo1.png"
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  
     const navigate = useNavigate();
     useEffect(() => {
-        const uploadBtn = document.getElementById("uploadBtn");
-        const fileInput = document.getElementById("fileInput");
-        const nameField = document.getElementById("nameField");
-        const emailField = document.getElementById("emailField");
-        const form = document.getElementById("form");
-        
-        const handleFileUpload = (event) => {
-          const file = event.target.files[0];
-          if (file) {
-            console.log("File uploaded:", file.name);
-          }
-        };
-      
-        const handleFormSubmit = (event) => {
-          event.preventDefault();
-          const name = nameField.value.trim();
-          const email = emailField.value.trim();
-      
-          if (name && email) {
-            console.log("Form submitted with:", { name, email });
-          } else {
-            alert("Please fill out both the name and email fields.");
-          }
-        };
-      
-        const validateEmail = () => {
-          const email = emailField.value;
-          const isValid = /\S+@\S+\.\S+/.test(email);
-          if (!isValid) {
-            alert("Please enter a valid email address.");
-          }
-        };
-      
-        if (uploadBtn && fileInput && form) {
-          const handleClick = () => fileInput.click();
-      
-         
-          uploadBtn.addEventListener("click", handleClick);
-          fileInput.addEventListener("change", handleFileUpload);
-          form.addEventListener("submit", handleFormSubmit);
-          emailField.addEventListener("blur", validateEmail);
-      
 
-          return () => {
-            uploadBtn.removeEventListener("click", handleClick);
-            fileInput.removeEventListener("change", handleFileUpload);
-            form.removeEventListener("submit", handleFormSubmit);
-            emailField.removeEventListener("blur", validateEmail);
-          };
-        }
+      const heroContents = document.querySelectorAll(".hero-content");
+      let currentIndex = 0;
+  
+      function showHeroContent(index) {
+        heroContents.forEach((content, i) => {
+          if (i === index) {
+            content.style.opacity = "1";
+          } else {
+            content.style.opacity = "0";
+          }
+        });
+      }
+  
+      function rotateHeroContents() {
+        showHeroContent(currentIndex);
+        currentIndex = (currentIndex + 1) % heroContents.length;
+      }
+  
+      // Initially, show the first hero content for 3 seconds
+      setTimeout(function () {
+        rotateHeroContents();
+        // Then continue rotating every 4 seconds
+        setInterval(rotateHeroContents, 4000);
+      }, 1000);
+
       }, []);
       
 
