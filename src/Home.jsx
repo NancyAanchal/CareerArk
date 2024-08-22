@@ -259,7 +259,7 @@ const Home = () => {
             <img src="https://i0.wp.com/www.mindgroom.com/wp-content/uploads/2021/02/Mindgroom_career_counselling_1..gif?resize=426%2C300&ssl=1" alt="Career Guidance Image"/>
         </div>
     </section>
-    <div>
+    <footer>
     
         <div className="row">
             <div className="col">
@@ -277,31 +277,31 @@ const Home = () => {
             <div className="col">
                 <h3>Links <div className="bottom_line"><span></span></div></h3>
                 
-                    <a href="">HOME</a>
-                    <a href="">ABOUT</a>
-                    <a href="">SERVICE</a>
-                    <a href="">CONTACT US</a>
+                    <ul><a href="">HOME</a></ul>
+                    <ul><a href="">ABOUT</a></ul>
+                    <ul><a href="">SERVICE</a></ul>
+                    <ul><a href="">CONTACT US</a></ul>
                 
             </div>
             <div className="col">
                 <h3>Newsletter <div className="bottom_line"><span></span></div></h3>
                 <form>
-                    <ion-icon className="icon" name="mail"></ion-icon>
-                    <input type="email" placeholder="Enter your email" required/>
+                <i className="button__icon fas fa-envelope" ></i>
+                    <input type="email" placeholder="   Enter your email" required/>
                     <button type="submit"><ion-icon className="icon_right" name="arrow-round-forward"></ion-icon></button>
                 </form>
                 <div className="social_icons">
-                    <ion-icon className="social_icon" name="logo-facebook"></ion-icon>
-                    <ion-icon className="social_icon" name="logo-whatsapp"></ion-icon>
-                    <ion-icon className="social_icon" name="logo-twitter"></ion-icon>
-                    <ion-icon className="social_icon" name="logo-instagram"></ion-icon>
+                <i className="fa-brands fa-facebook" ></i>
+                <i className="fa-brands fa-twitter" ></i>
+                <i className="fa-brands fa-whatsapp" ></i>
+                <i className="fa-brands fa-instagram" ></i>
                 </div>
             </div>
         </div>
         
         <p className="copyright">MyVision Ⓒ 2023 - All Rights Reserved</p>
      
-    </div>
+    </footer>
 
     
     </>
