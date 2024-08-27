@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./assets/styles.css"
+import "./styles/styles.css"
 import logo from "./assets/images/logo3.png";
 import img1 from "./assets/images/img1.png";
 import img2 from "./assets/images/img2.png";
@@ -17,11 +17,10 @@ import interviewPrep from "./assets/images/Interview.jpg";
 import activeCompanies from "./assets/images/ActiveCompanies.jpg";
 import internships from "./assets/images/Internships.jpg"
 import logo1 from "./assets/images/logo1.png"
-import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   
-    const navigate = useNavigate();
+    
     useEffect(() => {
 
       const heroContents = document.querySelectorAll(".hero-content");
@@ -138,7 +137,7 @@ const Home = () => {
                 <figcaption><h3>AI Assistant</h3></figcaption>
               </figure>
               <p>An intelligent virtual assistant that provides personalized career guidance and recommendations based on an individual's skills, interests, and goals.</p>
-              <a href="./chatbot/public/index.html">Chat with AI</a>
+              <a href="/chatbot">Chat with AI</a>
             </li>
             <li>
               <figure>
