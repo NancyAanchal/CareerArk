@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Form.css'; // Import the CSS for the form
+import '../styles/Form.css'; // Import the CSS for the form
 
 function Form() {
   const [rating, setRating] = useState(null);
