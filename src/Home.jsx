@@ -58,35 +58,35 @@ const Home = () => {
           <img src={logo} alt="Your Career Guide Logo" width="140" height="50" />
         </div>
         <div className="home-button">
-          <a href="#">Home</a>
+          <a href="/comingsoon">Home</a>
         </div>
         <div className="search-container">
           <form id="search-form">
             <input type="text" placeholder="Search for colleges, Exams, Courses and More..." />
-            <button type="submit" href="#">Search</button>
+            <button type="submit" href="/comingsoon">Search</button>
           </form>
         </div>
         <div className="notification">
-          <a href="#">Notification</a>
+          <a href="/comingsoon">Notification</a>
         </div>
         <div className="login-signup">
           <a href="/login">Login/Signup</a>
         </div>
         <div className="contact-button">
-          <a href="#">Contact</a>
+          <a href="/comingsoon">Contact</a>
         </div>
       </header>
 
       <header className="bottom-header">
         <nav>
           <ul>
-            <li><a href="#">All Courses</a></li>
-            <li><a href="#">9th-10th</a></li>
-            <li><a href="#">11th-12th</a></li>
-            <li><a href="#">Graduate</a></li>
-            <li><a href="#">Professional</a></li>
-            <li><a href="#">Job Alert</a></li>
-            <li><a href="#">Latest Updates</a></li>
+            <li><a href="/comingsoon">All Courses</a></li>
+            <li><a href="/comingsoon">9th-10th</a></li>
+            <li><a href="/comingsoon">11th-12th</a></li>
+            <li><a href="/comingsoon">Graduate</a></li>
+            <li><a href="/comingsoon">Professional</a></li>
+            <li><a href="/comingsoon">Job Alert</a></li>
+            <li><a href="/comingsoon">Latest Updates</a></li>
           </ul>
         </nav>
       </header>
@@ -172,7 +172,7 @@ const Home = () => {
                 <figcaption><h3>Read Articles</h3></figcaption>
               </figure>
               <p>Provides access to a library of articles covering various topics, including academics, career advice, campus events, and student achievements.</p>
-              <a href="#">Read Articles</a>
+              <a href="/comingsoon">Read Articles</a>
             </li>
             <li>
               <figure>
@@ -180,7 +180,7 @@ const Home = () => {
                 <figcaption><h3>Need Counselling</h3></figcaption>
               </figure>
               <p>Offers counseling services for students to seek guidance on academic, personal, or career-related issues, promoting their well-being and success.</p>
-              <a href="#">Search Counselor</a>
+              <a href="/comingsoon">Search Counselor</a>
             </li>
           </ul>
         </section>
@@ -276,10 +276,10 @@ const Home = () => {
             <div className="col">
                 <h3>Links <div className="bottom_line"><span></span></div></h3>
                 
-                    <ul><a href="">HOME</a></ul>
-                    <ul><a href="">ABOUT</a></ul>
-                    <ul><a href="">SERVICE</a></ul>
-                    <ul><a href="">CONTACT US</a></ul>
+                    <ul><a href="/comingsoon">HOME</a></ul>
+                    <ul><a href="/comingsoon">ABOUT</a></ul>
+                    <ul><a href="/comingsoon">SERVICE</a></ul>
+                    <ul><a href="/comingsoon">CONTACT US</a></ul>
                 
             </div>
             <div className="col">

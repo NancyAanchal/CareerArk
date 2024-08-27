@@ -23,9 +23,9 @@ const LoginPage = () => {
           <div style={styles.socialLogin}>
             <h3>log in via</h3>
             <div style={styles.socialIcons}>
-              <a href="#" className="social-login__icon fab fa-instagram" style={styles.socialIcon}></a>
-              <a href="#" className="social-login__icon fab fa-facebook" style={styles.socialIcon}></a>
-              <a href="#" className="social-login__icon fab fa-twitter" style={styles.socialIcon}></a>
+              <a href="/comingsoon" className="social-login__icon fab fa-instagram" style={styles.socialIcon}></a>
+              <a href="/comingsoon" className="social-login__icon fab fa-facebook" style={styles.socialIcon}></a>
+              <a href="/comingsoon" className="social-login__icon fab fa-twitter" style={styles.socialIcon}></a>
             </div>
           </div>
         </div>
