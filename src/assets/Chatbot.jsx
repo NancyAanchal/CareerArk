@@ -1,4 +1,5 @@
-import { Webchat, WebchatProvider, Fab, getClient } from "@botpress/webchat";
+import React from "react";
+import { Webchat, WebchatProvider, getClient } from "@botpress/webchat";
 import { buildTheme } from "@botpress/webchat-generator";
 
 const { theme, style } = buildTheme({

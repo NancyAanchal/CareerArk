@@ -55,7 +55,7 @@ const Home = () => {
     <>
       <header className="top-header">
         <div className="logo">
-          <img src={logo} alt="Your Career Guide Logo" width="140" height="50" />
+          <img src={logo} alt="Footer logo" width="140" height="50" />
         </div>
         <div className="home-button">
           <a href="/comingsoon">Home</a>
@@ -100,7 +100,7 @@ const Home = () => {
 
       <section className="rotating-hero">
         <div className="hero-content">
-          <img src={img1} alt="Image 1" />
+          <img src={img1} alt="AI image" />
           <div className="hero-text">
             <h1>Welcome to Your Career Guide</h1>
             <p>Your personal AI assistant to help you choose the right career path.<br />Explore a world of opportunities and find your dream career with our guidance.</p>
@@ -109,7 +109,7 @@ const Home = () => {
           </div>
         </div>
         <div className="hero-content">
-          <img src={img4} alt="Image 2" />
+          <img src={img4} alt="think" />
           <div className="hero-text">
             <h1>Unlock Your Potential</h1>
             <p>Assess your capabilities with our free career test.<br />Discover your strengths and interests to excel in your chosen field.</p>
@@ -118,7 +118,7 @@ const Home = () => {
           </div>
         </div>
         <div className="hero-content">
-          <img src={img2} alt="Image 3" />
+          <img src={img2} alt="Exploring options" />
           <div className="hero-text">
             <h1>Explore Your Options</h1>
             <p>Read and write reviews about colleges and universities.<br />Find the perfect educational institution for your future success.</p>
@@ -133,7 +133,7 @@ const Home = () => {
           <ul>
             <li>
               <figure>
-                <img src={aiAssistant} alt="AI Assistant" />
+                <img src={aiAssistant} alt="A robot" />
                 <figcaption><h3>AI Assistant</h3></figcaption>
               </figure>
               <p>An intelligent virtual assistant that provides personalized career guidance and recommendations based on an individual's skills, interests, and goals.</p>
@@ -141,7 +141,7 @@ const Home = () => {
             </li>
             <li>
               <figure>
-                <img src={freeCareerTest} alt="Free Career Test" />
+                <img src={freeCareerTest} alt="A girl staring at the screen" />
                 <figcaption><h3>Free Career Test</h3></figcaption>
               </figure>
               <p>A tool that assesses an individual's aptitudes, interests, and strengths to help them identify suitable career paths and make informed educational and professional choices.</p>
@@ -149,7 +149,7 @@ const Home = () => {
             </li>
             <li>
               <figure>
-                <img src={resumeScanner} alt="Resume Scanner" />
+                <img src={resumeScanner} alt="Resume on screen" />
                 <figcaption><h3>Resume Scanner</h3></figcaption>
               </figure>
               <p>Allows users to submit their resumes for personalized career advice and suggestions based on their qualifications and experiences.</p>
@@ -160,7 +160,7 @@ const Home = () => {
           <ul>
             <li>
               <figure>
-                <img src={reviewCollege} alt="Review Your College" />
+                <img src={reviewCollege} alt="Colleges" />
                 <figcaption><h3>Review Your College</h3></figcaption>
               </figure>
               <p>Allows students and alumni to submit and read reviews of the college, providing insights into campus life, academics, and overall experience.</p>
@@ -168,7 +168,7 @@ const Home = () => {
             </li>
             <li>
               <figure>
-                <img src={freeCareerTest} alt="Read Articles" />
+                <img src={freeCareerTest} alt="Articles online" />
                 <figcaption><h3>Read Articles</h3></figcaption>
               </figure>
               <p>Provides access to a library of articles covering various topics, including academics, career advice, campus events, and student achievements.</p>
@@ -176,7 +176,7 @@ const Home = () => {
             </li>
             <li>
               <figure>
-                <img src={reviewCollege} alt="Need Counselling" />
+                <img src={reviewCollege} alt="A counsellor" />
                 <figcaption><h3>Need Counselling</h3></figcaption>
               </figure>
               <p>Offers counseling services for students to seek guidance on academic, personal, or career-related issues, promoting their well-being and success.</p>
@@ -190,56 +190,56 @@ const Home = () => {
         <h2>Top Articles</h2>
         <div className="article-container">
           <div className="article">
-            <img src={schoolLife} alt="School Life" />
+            <img src={schoolLife} alt="School kids" />
             <div className="article-content">
               <h3>School Life</h3>
               <p>Explore the unforgettable memories and challenges of your school days as we delve into the joys and tribulations of growing up.</p>
             </div>
           </div>
           <div className="article">
-            <img src={collegeLife} alt="College Life" />
+            <img src={collegeLife} alt="College kids" />
             <div className="article-content">
               <h3>College Life</h3>
               <p>Dive into the exciting world of college life, where new adventures, friendships, and opportunities await at every corner of the campus.</p>
             </div>
           </div>
           <div className="article">
-            <img src={studentStories} alt="Student Stories" />
+            <img src={studentStories} alt="Students" />
             <div className="article-content">
               <h3>Student Stories</h3>
               <p>Get inspired by the real-life journeys and experiences of students who overcame obstacles and achieved their dreams against all odds.</p>
             </div>
           </div>
           <div className="article">
-            <img src={studyAbroad} alt="Study Abroad" />
+            <img src={studyAbroad} alt="Abroad universities" />
             <div className="article-content">
               <h3>Study Abroad</h3>
               <p>Discover the excitement and challenges of studying in a foreign country as we guide you through the essential steps to prepare for this life-changing adventure.</p>
             </div>
           </div>
           <div className="article">
-            <img src={campusNews} alt="Campus News" />
+            <img src={campusNews} alt="Campuses" />
             <div className="article-content">
               <h3>Campus News</h3>
               <p>Stay up-to-date with the latest happenings on your college campus, from student achievements to upcoming events and new initiatives.</p>
             </div>
           </div>
           <div className="article">
-            <img src={interviewPrep} alt="Interview Preparation" />
+            <img src={interviewPrep} alt="big interview" />
             <div className="article-content">
               <h3>Interview Preparation</h3>
               <p>Prepare yourself for the challenges of job interviews with expert tips, practice questions, and strategies to help you stand out from the competition.</p>
             </div>
           </div>
           <div className="article">
-            <img src={activeCompanies} alt="Active Companies" />
+            <img src={activeCompanies} alt="big Companies" />
             <div className="article-content">
               <h3>Active Companies</h3>
               <p>Discover leading companies that are actively recruiting and providing exciting career opportunities for young professionals.</p>
             </div>
           </div>
           <div className="article">
-                <img src={internships} alt="College Life"/>
+                <img src={internships} alt="big interns"/>
                 <div className="article-content">
                     <h3>Internship</h3>
                     <p>Navigate the world of internships and gain practical experience in your field, setting the stage for a promising career ahead.</p>
@@ -255,7 +255,7 @@ const Home = () => {
             <button>Connect to a Counselor</button>
         </div>
         <div className="image">
-            <img src="https://i0.wp.com/www.mindgroom.com/wp-content/uploads/2021/02/Mindgroom_career_counselling_1..gif?resize=426%2C300&ssl=1" alt="Career Guidance Image"/>
+            <img src="https://i0.wp.com/www.mindgroom.com/wp-content/uploads/2021/02/Mindgroom_career_counselling_1..gif?resize=426%2C300&ssl=1" alt="Career Guidance"/>
         </div>
     </section>
     <footer>
