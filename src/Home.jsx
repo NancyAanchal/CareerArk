@@ -16,7 +16,7 @@ import campusNews from "./assets/images/CampusNews.jpg";
 import interviewPrep from "./assets/images/Interview.jpg";
 import activeCompanies from "./assets/images/ActiveCompanies.jpg";
 import internships from "./assets/images/Internships.jpg"
-import logo1 from "./assets/images/logo1.png"
+import logo1 from "./assets/images/newlogo-nobg.png"
 
 const Home = () => {
   
@@ -263,7 +263,7 @@ const Home = () => {
         <div className="row">
             <div className="col">
                 <img src={logo1} className="footer_logo"/>
-                <p className="footer_about">Welcome to MyVision, your personalized career guide powered by cutting-edge AI technology. Discover your ideal career path through insightful assessments that analyze your personality, skills, and interests. Explore comprehensive career profiles, educational opportunities, and job market insights to make informed decisions about your future.
+                <p className="footer_about">Welcome to CareerArk, your personalized career guide powered by cutting-edge AI technology. Discover your ideal career path through insightful assessments that analyze your personality, skills, and interests. Explore comprehensive career profiles, educational opportunities, and job market insights to make informed decisions about your future.
                 </p>
             </div>
             <div className="col">
@@ -298,7 +298,7 @@ const Home = () => {
             </div>
         </div>
         
-        <p className="copyright">MyVision Ⓒ 2023 - All Rights Reserved</p>
+        <p className="copyright">CareerArk Ⓒ 2024 - All Rights Reserved</p>
      
     </footer>
 

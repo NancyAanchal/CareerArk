@@ -282,10 +282,10 @@ footer a:hover {
 }
 
 .footer_logo {
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    
     position: relative;
-    top: -23px;
+    top: -38px;
     left: -20px;
 }
 
