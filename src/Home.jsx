@@ -100,12 +100,12 @@ const Home = () => {
 
       <section className="rotating-hero">
         <div className="hero-content">
-          <img src={img1} alt="AI image" />
+          <img src={img1} alt="" />
           <div className="hero-text">
             <h1>Welcome to Your Career Guide</h1>
             <p>Your personal AI assistant to help you choose the right career path.<br />Explore a world of opportunities and find your dream career with our guidance.</p>
             <br />
-            <button className="button-64" role="button"><span className="text">Take the Career Test</span></button>
+            <button className="button-64"><span className="text">Take the Career Test</span></button>
           </div>
         </div>
         <div className="hero-content">
@@ -114,7 +114,7 @@ const Home = () => {
             <h1>Unlock Your Potential</h1>
             <p>Assess your capabilities with our free career test.<br />Discover your strengths and interests to excel in your chosen field.</p>
             <br />
-            <button className="button-64" role="button"><span className="text">Upload Resume</span></button>
+            <button className="button-64"><span className="text">Upload Resume</span></button>
           </div>
         </div>
         <div className="hero-content">
@@ -123,7 +123,7 @@ const Home = () => {
             <h1>Explore Your Options</h1>
             <p>Read and write reviews about colleges and universities.<br />Find the perfect educational institution for your future success.</p>
             <br />
-            <button className="button-64" role="button"><span className="text">Review College</span></button>
+            <button className="button-64"><span className="text">Review College</span></button>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@ const Home = () => {
                 <figcaption><h3>Resume Scanner</h3></figcaption>
               </figure>
               <p>Allows users to submit their resumes for personalized career advice and suggestions based on their qualifications and experiences.</p>
-              <a id="uploadBtn" href= 'https://resumescanner-p7to3payetuzsdzyvqrzsi.streamlit.app/' target="_blank">Upload Resume</a>
+              <a id="uploadBtn" href= 'https://resumescanner-p7to3payetuzsdzyvqrzsi.streamlit.app/' rel="noreferrer" target="_blank">Upload Resume</a>
               <input type="file" id="fileInput" style={{ display: "none" }} />
             </li>
           </ul>
@@ -262,7 +262,7 @@ const Home = () => {
     
         <div className="row">
             <div className="col">
-                <img src={logo1} className="footer_logo"/>
+                <img src={logo1} alt="logo footer" className="footer_logo"/>
                 <p className="footer_about">Welcome to CareerArk, your personalized career guide powered by cutting-edge AI technology. Discover your ideal career path through insightful assessments that analyze your personality, skills, and interests. Explore comprehensive career profiles, educational opportunities, and job market insights to make informed decisions about your future.
                 </p>
             </div>
