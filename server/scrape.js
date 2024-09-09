@@ -25,7 +25,6 @@ app.get("/scrape", async (req, res) => {
     const html = response.data;
     const $ = cheerio.load(html);
 
-    // Example: Scrape job titles
     const jobs = [];
     $(".job-card").each((i, element) => {
       const title = $(element).find(".job-title a").text().trim();
