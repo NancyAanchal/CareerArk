@@ -17,6 +17,7 @@ import interviewPrep from "../assets/images/Interview.jpg";
 import activeCompanies from "../assets/images/ActiveCompanies.jpg";
 import internships from "../assets/images/Internships.jpg";
 import logo1 from "../assets/images/newlogo-nobg.png";
+import counsellor from "../assets/images/Counsellor.jpg"
 
 const Home = () => {
   useEffect(() => {
@@ -69,11 +70,11 @@ const Home = () => {
         <div className="notification">
           <a href="/comingsoon">Notification</a>
         </div>
-        <div className="login-signup">
-          <a href="/login">Login/Signup</a>
-        </div>
         <div className="contact-button">
           <a href="/comingsoon">Contact</a>
+        </div>
+        <div className="login-signup">
+          <a href="/login">Login</a>
         </div>
       </header>
 
@@ -252,7 +253,7 @@ const Home = () => {
             </li>
             <li>
               <figure>
-                <img src={reviewCollege} alt="A counsellor" />
+                <img src={counsellor} alt="A counsellor" />
                 <figcaption>
                   <h3>Need Counselling</h3>
                 </figcaption>
