@@ -1,20 +1,29 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../styles/jobAlert.css";
 
 const JobAlert = () => {
   const [position, setPosition] = useState("");
   const [location, setLocation] = useState("");
+  const [country, setCountry] = useState("Australia");
+  const [searched, setSearched] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const [jobs, setJobs] = useState([]);
 
   const handleSearch = async () => {
+    setSearched(true);
+    setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:5000/scrape?position=${position}&location=${location}`
+        `http://localhost:5000/scrape?country=${country}&position=${position}&location=${location}`
       );
 
       setJobs(response.data.jobs);
     } catch (error) {
       console.error("Error fetching jobs:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -56,48 +65,38 @@ const JobAlert = () => {
             value={position}
             onChange={(e) => setPosition(e.target.value)}
             placeholder="Job title"
-            style={{
-              flex: "1",
-              padding: "0.75rem",
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              outline: "none",
-              boxShadow: "0 0 0 2px transparent",
-              transition: "box-shadow 0.2s",
-              "&:focus": { boxShadow: "0 0 0 2px #ff7c0a" },
-            }}
           />
           <input
             type="text"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             placeholder="Location"
-            style={{
-              flex: "1",
-              padding: "0.75rem",
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              outline: "none",
-              boxShadow: "0 0 0 2px transparent",
-              transition: "box-shadow 0.2s",
-              "&:focus": { boxShadow: "0 0 0 2px #ff7c0a" },
-            }}
           />
-          <button
-            onClick={handleSearch}
-            style={{
-              backgroundColor: "#ff7c0a",
-              color: "#fff",
-              padding: "0.75rem",
-              borderRadius: "8px",
-              border: "none",
-              cursor: "pointer",
-              transition: "background-color 0.2s",
-              "&:hover": { backgroundColor: "#ff6a00" },
-            }}
+
+          <select
+            id="country"
+            value={country}
+            placeholder="Country"
+            onChange={(e) => setCountry(e.target.value)}
           >
-            Search Jobs
-          </button>
+            <option value="Australia">Australia</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="France">France</option>
+            <option value="Hongkong">Hong Kong</option>
+            <option value="India">India</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Newzealand">New Zealand</option>
+            <option value="Philipines">Philipines</option>
+            <option value="singapore">singapore</option>
+            <option value="Spain">Spain</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Unitedkingdom">United Kingdom</option>
+            <option value="Unitedstates">United States</option>
+          </select>
+
+          <button onClick={handleSearch}>Search Jobs</button>
         </div>
         <h2
           style={{
@@ -115,7 +114,17 @@ const JobAlert = () => {
             gap: "1.5rem",
           }}
         >
-          {jobs.length > 0 ? (
+          {loading ? (
+            <p
+              style={{
+                gridColumn: "span 3",
+                textAlign: "center",
+                color: "#777",
+              }}
+            >
+              ...Loading
+            </p>
+          ) : jobs && jobs.length > 0 ? (
             jobs.map((job, index) => (
               <div
                 key={index}
@@ -147,6 +156,9 @@ const JobAlert = () => {
                   <strong>Date Posted:</strong> {job.datePosted}
                 </p>
                 <p style={{ color: "#333" }}>{job.description}</p>
+                <button onClick={() => (window.location.href = job.link)}>
+                  Explore
+                </button>
               </div>
             ))
           ) : (
@@ -157,7 +169,7 @@ const JobAlert = () => {
                 color: "#777",
               }}
             >
-              No job results found
+              {searched ? "NO results found" : <span></span>}
             </p>
           )}
         </div>

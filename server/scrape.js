@@ -8,12 +8,33 @@ const PORT = 5000;
 
 app.use(cors());
 
+const countryCodes = {
+  australia: "au",
+  bangladesh: "bd",
+  brazil: "br",
+  canada: "ca",
+  france: "fr",
+  hongkong: "hk",
+  india: "in",
+  malaysia: "my",
+  newzealand: "nz",
+  philippines: "ph",
+  singapore: "sg",
+  spain: "es",
+  thailand: "th",
+  unitedkingdom: "uk",
+  unitedstates: "us",
+};
+
 app.get("/scrape", async (req, res) => {
-  const { position, location } = req.query;
+  const { country, position, location } = req.query;
+
+  const countryCode = countryCodes[country.toLowerCase()];
+
   try {
     const response = await axios.request({
       method: "GET",
-      url: `https://au.jora.com/j?sp=search&trigger_source=serp&q=${encodeURIComponent(
+      url: `https://${countryCode}.jora.com/j?sp=search&trigger_source=serp&q=${encodeURIComponent(
         position
       )}&l=${encodeURIComponent(location)}`,
       headers: {
@@ -44,6 +65,7 @@ app.get("/scrape", async (req, res) => {
         location,
         datePosted,
         description,
+        link: `https://${countryCode}.jora.com${link}`,
       });
     });
 
