@@ -16,7 +16,8 @@ const JobAlert = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:5000/scrape?country=${country}&position=${position}&location=${location}`
+        `https://careerark.onrender.com/scrape?country=${country}&position=${position}&location=${location}`
+        // `http://localhost:5000/scrape?country=${country}&position=${position}&location=${location}`
       );
 
       setJobs(response.data.jobs);
