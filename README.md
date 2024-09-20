@@ -1,8 +1,6 @@
-Website link: https://main--careerark.netlify.app/
-# 🌟 CareerArk
-
-  <img src="./src/assets/images/logo3-nobg.png" alt="logo" width="300"/>
-  
+ <img src="./src/assets/images/logo3-nobg.png" alt="logo" width="300"/>
+ 
+  Live at : https://main--careerark.netlify.app/
 
 
 **CareerArk** is a comprehensive platform offering a variety of services to assist users in their educational and professional journeys. From personalized career recommendations to advanced AI support, the platform is designed to provide actionable insights and resources for career development.
@@ -51,28 +49,28 @@ To get started with **CareerArk** on your local machine, follow these steps:
 ## 🗂️ Project Structure
     ```perl
     
-📂 public               # Public static assets
-📂 server
-├── scrape.js           # Backend logic for scraping
-📂 src
-├── 📂 assets
-│   └── 📂 images       # Images and other assets
-├── 📂 components
-│   ├── BottomHeader.jsx
-│   ├── TopHeader.jsx
-│   ├── features/
-│   ├── footer/
-│   ├── topArticles/
-│   └── counsellor.jsx
-├── 📂 pages
-│   ├── JobAlert.jsx
-│   ├── ChatBot.jsx
-│   ├── Login.jsx
-│   └── ...             # Other minor page components
-├── 📂 styles           # Stylesheets for the app
-└── App.js              
-README.md
-
+    📂 public               # Public static assets
+    📂 server
+    ├── scrape.js           # Backend logic for scraping
+    📂 src
+    ├── 📂 assets
+    │   └── 📂 images       # Images and other assets
+    ├── 📂 components
+    │   ├── BottomHeader.jsx
+    │   ├── TopHeader.jsx
+    │   ├── features/
+    │   ├── footer/
+    │   ├── topArticles/
+    │   └── counsellor.jsx
+    ├── 📂 pages
+    │   ├── JobAlert.jsx
+    │   ├── ChatBot.jsx
+    │   ├── Login.jsx
+    │   └── ...             # Other minor page components
+    ├── 📂 styles           # Stylesheets for the app
+    └── App.js              
+    README.md
+    
 
 ## 🤝 Contributing
 We welcome contributions! Feel free to fork the project, submit pull requests, or open issues to enhance the platform.
