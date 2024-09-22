@@ -47,7 +47,7 @@ To get started with **CareerArk** on your local machine, follow these steps:
    node scrape.js
 
 ## 🗂️ Project Structure
-    ```perl
+    
     
     📂 public               # Public static assets
     📂 server
