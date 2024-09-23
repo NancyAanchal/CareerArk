@@ -12,6 +12,7 @@ import HomePage from "./components/HomePage";
 import Features from "./components/Features";
 import TopArticles from "./components/TopArticles";
 import Counsellor from "./components/Counsellor";
+import QuizPage from "./components/QuizPage";
 import Footer from "./components/Footer";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/Form" element={<Form />} />
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/jobs" element={<JobAlert />} />
+          <Route path="/QuizPage" element={<QuizPage />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
         </Routes>
         <Footer />

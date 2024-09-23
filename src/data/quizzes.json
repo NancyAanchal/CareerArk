@@ -1,0 +1,59 @@
+[
+    {
+      "title": "Skill based Test",
+      "description": "For 9th garde students. This report will help you understand where your interest lies.",
+      "questions": 40,
+      "duration": 30,
+      "image": "images/skill-test.jpg"
+    },
+    {
+      "title": "Stream Selector",
+      "description": "The test assesses aptitude and personality to determine the most suitable stream for 10th grade students.",
+      "questions": 70,
+      "duration": 40,
+      "image": "images/stream-test.jpg"
+    },
+    {
+      "title": "UG Course Selector",
+      "description": "Test your knowledge in different fields like Engineering, Docotor, Law, Teaching, entrepreneurship even more.",
+      "questions": 100,
+      "duration": 60,
+      "image": "images/UGCourse-test.jpg"
+    },
+    {
+      "title": "Professional Skill",
+      "description": "Provides you personalized report, which will help you to understand your Professional Skill parameter.",
+      "questions": 80,
+      "duration": 60,
+      "image": "images/Professional-test.jpg"
+    },
+    {
+        "title": "Aptitude Test",
+        "description": "This Test measures your abilities in various domains like IQ, logical reasoning, numerical aptitude, and verbal ability. ",
+        "questions": 50,
+        "duration": 60,
+        "image": "images/aptitude-test.jpg"
+      },
+      {
+        "title": "Personality Test",
+        "description": "This test evaluates four key personality types, helping you identify suitable careers and work environments.",
+        "questions": 40,
+        "duration": 45,
+        "image": "images/personality-test.jpg"
+      },
+      {
+        "title": "RIASEC Test",
+        "description": "It evaluates your interests across six domains: Realistic, Investigative, Artistic, Social, Enterprising, and Conventional.",
+        "questions": 60,
+        "duration": 60,
+        "image": "images/RIASEC-test.jpg"
+      },
+      {
+        "title": "Brain Dominance Test",
+        "description": "It determines whether you are more left-brained(analytical) or right-brained(creative), helps in choosing a suitable career path.",
+        "questions": 60,
+        "duration": 75,
+        "image": "images/brain-test.jpg"
+      }
+  ]
+  

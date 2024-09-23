@@ -40,6 +40,7 @@ const Features = () => {
                 informed educational and professional choices.
               </p>
               <a href="./quiz/index.html">Start Test</a>
+              <a href="/QuizPage">Career Test</a>
             </li>
             <li>
               <figure>
