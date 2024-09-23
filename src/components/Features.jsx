@@ -1,4 +1,5 @@
 import React from "react";
+// import { useNavigate } from 'react-router-dom';
 import "../styles/style.css";
 import aiAssistant from "../assets/images/AIassistent.jpg";
 import freeCareerTest from "../assets/images/test.jpg";
@@ -8,6 +9,12 @@ import counsellor from "../assets/images/Counsellor.jpg";
 import jobSearch from "../assets/images/jobSearch.jpeg";
 
 const Features = () => {
+
+  // const navigate = useNavigate();
+  //   const goToQuizPage = () => {
+  //     navigate('/QuizPage');
+  //   };
+
   return (
     <>
       <main className="wrapper">
@@ -39,7 +46,6 @@ const Features = () => {
                 strengths to help them identify suitable career paths and make
                 informed educational and professional choices.
               </p>
-              <a href="./quiz/index.html">Start Test</a>
               <a href="/QuizPage">Career Test</a>
             </li>
             <li>
