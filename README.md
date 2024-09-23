@@ -1,5 +1,5 @@
- <img src="./src/assets/images/logo3-nobg.png" alt="logo" width="300"/>
- 
+<img src="./src/assets/images/logoReadme.png" alt="logo" width="350"/>
+
   Live at : https://main--careerark.netlify.app/
 
 
@@ -47,7 +47,7 @@ To get started with **CareerArk** on your local machine, follow these steps:
    node scrape.js
 
 ## 🗂️ Project Structure
-    ```perl
+    
     
     📂 public               # Public static assets
     📂 server
