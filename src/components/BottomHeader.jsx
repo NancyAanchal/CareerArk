@@ -11,7 +11,7 @@ const BottomHeader = () => {
               <a href="/comingsoon">All Courses</a>
             </li>
             <li>
-              <a href="/comingsoon">9th-10th</a>
+              <a href="/counselling1">9th-10th</a>
             </li>
             <li>
               <a href="/comingsoon">11th-12th</a>
