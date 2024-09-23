@@ -1,4 +1,4 @@
- <img src="./src/assets/images/logo3-nobg.png" alt="logo" width="300"/>
+ <img src="./src/assets/images/logoReadme.png" alt="logo" width="300"/>
  
   Live at : https://main--careerark.netlify.app/
 
