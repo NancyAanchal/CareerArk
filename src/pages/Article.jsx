@@ -28,7 +28,7 @@ const Articles = () => {
       }
     };
 
-    // fetchArticles();
+    fetchArticles();
   }, [topic]);
 
   return (
