@@ -14,7 +14,8 @@ import TopArticles from "./components/TopArticles";
 import Counsellor from "./components/Counsellor";
 import QuizPage from "./components/QuizPage";
 import Footer from "./components/Footer";
-import CounsellingPage1 from './components/CounsellingPage1';
+import CounsellingPage1 from "./components/CounsellingPage1";
+import Article from "./pages/Article";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/jobs" element={<JobAlert />} />
           <Route path="/QuizPage" element={<QuizPage />} />
           <Route path="/counselling1" element={<CounsellingPage1 />} />
+          <Route path="/article" element={<Article />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
         </Routes>
         <Footer />
