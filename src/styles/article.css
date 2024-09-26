@@ -7,7 +7,7 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.loading {
+.article-detail .loading {
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -18,24 +18,24 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.article-title {
+.article-detail .article-title {
   font-size: 2rem;
   margin-bottom: 20px;
   margin-top: 40px;
 }
 
-.image-container {
+.article-detail .image-container {
   max-width: 100%;
   margin-bottom: 20px;
 }
 
-.article-image {
+.article-detail .article-image {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-.article-content {
+.article-detail .article-content {
   overflow: hidden;
   font-size: 18;
   text-overflow: ellipsis;
@@ -44,7 +44,7 @@
   margin-bottom: 20px;
 }
 
-.read-more {
+.article-detail .read-more {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -58,16 +58,16 @@
   transition: "background-color 0.2s";
 }
 
-.read-more:hover {
+.article-detail .read-more:hover {
   background-color: #ff6a00;
   color: white;
   margin-bottom: 20px;
 }
 
-.url {
+.article-detail .url {
   color: #ff7c0a;
 }
 
-.url:hover {
+.article-detail .url:hover {
   color: #ff6a00;
 }
