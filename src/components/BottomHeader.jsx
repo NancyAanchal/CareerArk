@@ -29,7 +29,7 @@ const BottomHeader = () => {
               <a href="/comingsoon">Read Articles</a>
             </li>
             <li>
-              <a href="/comingsoon">Latest Updates</a>
+              <a href="/LatestUpdates">Latest Updates</a>
             </li>
           </ul>
         </nav>

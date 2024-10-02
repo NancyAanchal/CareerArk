@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Added a new section for articles",
+      "description": "We've added a new section dedicated to articles that can help you enhance your career knowledge and stay up-to-date with industry trends.",
+      "buttonText": "Try it Out",
+      "link": "/article"
+    },
+    {
+      "id": 2,
+      "title": "Updated the chatbot with latest data",
+      "description": "Our chatbot now contains the latest career counseling information and can answer even more of your questions to help you in your career journey.",
+      "buttonText": "Try Chatbot",
+      "link": "/chatbot"
+    },
+    {
+      "id": 3,
+      "title": "Bug Fix: Login Page Issue",
+      "description": "We've resolved an issue where some users experienced problems logging in. You should now be able to log in seamlessly.",
+      "buttonText": "Yeppy",
+      "link": "/login"
+    }
+  ]
+  
