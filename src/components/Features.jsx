@@ -9,12 +9,6 @@ import counsellor from "../assets/images/Counsellor.jpg";
 import jobSearch from "../assets/images/jobSearch.jpeg";
 
 const Features = () => {
-
-  // const navigate = useNavigate();
-  //   const goToQuizPage = () => {
-  //     navigate('/QuizPage');
-  //   };
-
   return (
     <>
       <main className="wrapper">

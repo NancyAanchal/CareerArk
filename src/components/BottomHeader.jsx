@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/style.css";
+import { useNavigate } from "react-router-dom";
 
 const BottomHeader = () => {
+  const navigate = useNavigate();
   return (
     <>
       <header className="bottom-header">
@@ -26,7 +28,12 @@ const BottomHeader = () => {
               <a href="/comingsoon">Study Abroad</a>
             </li>
             <li>
-              <a href="/comingsoon">Read Articles</a>
+              <button
+                onClick={() => navigate("/article", { state: "education" })}
+                href=""
+              >
+                Read Articles
+              </button>
             </li>
             <li>
               <a href="/LatestUpdates">Latest Updates</a>
