@@ -81,7 +81,7 @@ const TopArticles = () => {
             <img src={campusNews} alt="Campuses" />
             <div
               className="article-content"
-              onClick={() => handleArticleClick("education")}
+              onClick={() => handleArticleClick("campus")}
             >
               <h3>Campus News</h3>
               <p>
