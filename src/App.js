@@ -16,6 +16,7 @@ import QuizPage from "./components/QuizPage";
 import Footer from "./components/Footer";
 import CounsellingPage1 from "./components/CounsellingPage1";
 import Article from "./pages/Article";
+import LatestUpdates from './components/LatestUpdates';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/QuizPage" element={<QuizPage />} />
           <Route path="/counselling1" element={<CounsellingPage1 />} />
           <Route path="/article" element={<Article />} />
+          <Route path="/LatestUpdates" element={<LatestUpdates />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
         </Routes>
         <Footer />
