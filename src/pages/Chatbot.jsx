@@ -2,12 +2,6 @@ import React from "react";
 import { Webchat, WebchatProvider, getClient } from "@botpress/webchat";
 import { buildTheme } from "@botpress/webchat-generator";
 
-// const customCss = `
-//   .webchat-container {
-//     background-color: #000000;
-//   }
-// `;
-
 const { theme, style } = buildTheme({
   theme: "prism",
   themeColor: "#ff6a00",
