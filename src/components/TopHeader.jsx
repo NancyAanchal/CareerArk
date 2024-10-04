@@ -27,7 +27,6 @@ const TopHeader = () => {
           <a href="/comingsoon">Notification</a>
         </div>
         <div className="contact-button">
-          <a href="/comingsoon">Contact</a>
           <a href="/Contact">Contact</a>
         </div>
         <div className="login-signup">
