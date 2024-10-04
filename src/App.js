@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/style.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Form from "./pages/Form";
+import Form from "./components/Form";
 import Chatbot from "./pages/Chatbot";
 import JobAlert from "./pages/JobAlert";
 import ComingSoon from "./pages/comingsoon";
@@ -14,9 +14,11 @@ import TopArticles from "./components/TopArticles";
 import Counsellor from "./components/Counsellor";
 import QuizPage from "./components/QuizPage";
 import Footer from "./components/Footer";
-import CounsellingPage1 from "./components/CounsellingPage1";
+import CounsellingPage1 from "./pages/CounsellingPage1";
 import Article from "./pages/Article";
-import LatestUpdates from './components/LatestUpdates';
+import LatestUpdates from "./components/LatestUpdates";
+import ResultPage from "./pages/ResultPage";
+import TestComponent from "./pages/Test";
 
 function App() {
   return (
@@ -44,6 +46,8 @@ function App() {
           <Route path="/counselling1" element={<CounsellingPage1 />} />
           <Route path="/article" element={<Article />} />
           <Route path="/LatestUpdates" element={<LatestUpdates />} />
+          <Route path="/test-result" element={<ResultPage />} />
+          <Route path="/test" element={<TestComponent />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
         </Routes>
         <Footer />

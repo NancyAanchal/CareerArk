@@ -1,0 +1,197 @@
+[
+  {
+    "question": "What is the next number in the sequence: 2, 4, 8, 16, ?",
+    "options": ["32", "24", "20", "30"],
+    "correctAnswer": "32",
+    "category": "logical_reasoning"
+  },
+  {
+    "question": "What is 25% of 200?",
+    "options": ["50", "25", "100", "75"],
+    "correctAnswer": "50",
+    "category": "numerical_aptitude"
+  },
+  {
+    "question": "The antonym of 'diligent' is:",
+    "options": ["lazy", "hardworking", "smart", "quick"],
+    "correctAnswer": "lazy",
+    "category": "verbal_ability"
+  },
+  {
+    "question": "If 5x = 30, what is the value of x?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "6",
+    "category": "numerical_aptitude"
+  },
+  {
+    "question": "Find the odd one out: Circle, Square, Triangle, Cylinder.",
+    "options": ["Square", "Circle", "Cylinder", "Triangle"],
+    "correctAnswer": "Cylinder",
+    "category": "logical_reasoning"
+  },
+  {
+    "question": "Which word means the same as 'rapid'?",
+    "options": ["fast", "slow", "delayed", "gradual"],
+    "correctAnswer": "fast",
+    "category": "verbal_ability"
+  },
+  {
+    "question": "What is 35% of 400?",
+    "options": ["140", "120", "160", "180"],
+    "correctAnswer": "140",
+    "category": "numerical_aptitude"
+  },
+  {
+    "question": "If A = 1, B = 2, what is the value of J?",
+    "options": ["10", "9", "11", "12"],
+    "correctAnswer": "10",
+    "category": "logical_reasoning"
+  },
+  {
+    "question": "Which word is a synonym of 'fortunate'?",
+    "options": ["lucky", "poor", "unlucky", "slow"],
+    "correctAnswer": "lucky",
+    "category": "verbal_ability"
+  },
+  {
+    "question": "If a car travels 60 km in 1 hour, how far will it travel in 2.5 hours?",
+    "options": ["150 km", "120 km", "180 km", "200 km"],
+    "correctAnswer": "150 km",
+    "category": "numerical_aptitude"
+  },
+  {
+    "question": "Find the missing number in the pattern: 5, 10, 20, 40, ?",
+    "options": ["60", "50", "80", "100"],
+    "correctAnswer": "80",
+    "category": "logical_reasoning"
+  },
+  {
+    "question": "Choose the word that is most opposite in meaning to 'arrogant':",
+    "options": ["humble", "proud", "confident", "rude"],
+    "correctAnswer": "humble",
+    "category": "verbal_ability"
+  },
+  {
+    "question": "What is 20% of 250?",
+    "options": ["50", "25", "75", "100"],
+    "correctAnswer": "50",
+    "category": "numerical_aptitude"
+  },
+  {
+    "question": "If the word 'FLOOR' is coded as 'GMPPS', how is the word 'TABLE' coded?",
+    "options": ["UBCMF", "UBFMF", "UBFMD", "UBFLE"],
+    "correctAnswer": "UBFMF",
+    "category": "logical_reasoning"
+  },
+  {
+    "question": "If you rotate a square 45 degrees, what shape does it become?",
+    "options": ["A rhombus", "A rectangle", "A diamond", "A trapezium"],
+    "correctAnswer": "A diamond",
+    "category": "spatial_aptitude"
+  },
+  {
+    "question": "Which direction will a boat face after turning 270 degrees clockwise from North?",
+    "options": ["West", "South", "East", "North-East"],
+    "correctAnswer": "West",
+    "category": "spatial_aptitude"
+  },
+  {
+    "question": "What happens when you pull the string of a bow?",
+    "options": [
+      "Potential energy increases",
+      "Kinetic energy decreases",
+      "Mechanical energy is lost",
+      "Heat energy is created"
+    ],
+    "correctAnswer": "Potential energy increases",
+    "category": "mechanical_aptitude"
+  },
+  {
+    "question": "Which pulley system requires the least amount of effort to lift an object?",
+    "options": [
+      "Fixed pulley",
+      "Movable pulley",
+      "Compound pulley",
+      "Single pulley"
+    ],
+    "correctAnswer": "Compound pulley",
+    "category": "mechanical_aptitude"
+  },
+  {
+    "question": "Which object would sink in water?",
+    "options": ["A stone", "A rubber ball", "A wooden block", "A sponge"],
+    "correctAnswer": "A stone",
+    "category": "mechanical_aptitude"
+  },
+  {
+    "question": "If you push harder on an object and it moves faster, which law is this demonstrating?",
+    "options": [
+      "Newton's 2nd Law",
+      "Newton's 1st Law",
+      "Newton's 3rd Law",
+      "Law of conservation of energy"
+    ],
+    "correctAnswer": "Newton's 2nd Law",
+    "category": "mechanical_aptitude"
+  },
+  {
+    "question": "Which pattern comes next: A1, B2, C3, D4, ?",
+    "options": ["E5", "F5", "E4", "F6"],
+    "correctAnswer": "E5",
+    "category": "abstract_reasoning"
+  },
+  {
+    "question": "Identify the next image in the sequence of shapes: ▲, ■, ▼, ?",
+    "options": ["■", "▲", "▼", "○"],
+    "correctAnswer": "▲",
+    "category": "abstract_reasoning"
+  },
+  {
+    "question": "What is the missing shape in this pattern: △, ○, □, △, ○, □, ?",
+    "options": ["△", "□", "○", "♢"],
+    "correctAnswer": "△",
+    "category": "abstract_reasoning"
+  },
+  {
+    "question": "Which of the following is NOT a pattern?",
+    "options": ["1234", "ABCD", "1111", "XYZT"],
+    "correctAnswer": "XYZT",
+    "category": "abstract_reasoning"
+  },
+  {
+    "question": "Which word does NOT belong in the group: Cat, Dog, Fish, Carrot?",
+    "options": ["Cat", "Dog", "Fish", "Carrot"],
+    "correctAnswer": "Carrot",
+    "category": "abstract_reasoning"
+  },
+  {
+    "question": "Which number has been repeated the most: 3421, 4312, 5431, 2314?",
+    "options": ["1", "2", "3", "4"],
+    "correctAnswer": "1",
+    "category": "attention_to_detail"
+  },
+  {
+    "question": "Which word is spelled incorrectly: Achieve, Believe, Receive, Beleive?",
+    "options": ["Achieve", "Believe", "Receive", "Beleive"],
+    "correctAnswer": "Beleive",
+    "category": "attention_to_detail"
+  },
+  {
+    "question": "How many triangles are in this shape: ▲▲▲▲?",
+    "options": ["4", "6", "8", "10"],
+    "correctAnswer": "6",
+    "category": "attention_to_detail"
+  },
+  {
+    "question": "Find the smallest number in this set: 645, 524, 784, 432.",
+    "options": ["524", "784", "432", "645"],
+    "correctAnswer": "432",
+    "category": "attention_to_detail"
+  },
+  {
+    "question": "Identify the mistake in this sequence: 12, 13, 15, 16, 17.",
+    "options": ["15", "13", "12", "16"],
+    "correctAnswer": "15",
+    "category": "attention_to_detail"
+  }
+]
