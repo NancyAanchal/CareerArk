@@ -1,15 +1,14 @@
-/* General styles */
 .quiz-page {
-    background-color: #fff4e6; /* Light orange background */
+    background-color: #fff4e6;
   }
   
   .quiz-page .quiz-header {
     position: relative;
     text-align: center;
-    height: 400px; /* Adjust based on how large you want the header */
-    background: url('../assets/images/quiz_banner.png') no-repeat; /* Use your image here */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Center the image */
+    height: 400px;
+    background: url('../assets/images/quiz_banner.png') no-repeat;
+    background-size: cover;
+    background-position: center; 
     display: flex;
     justify-content: center;
   }
@@ -21,18 +20,18 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.6) 0%, /* Darker at the center */
-      rgba(0, 0, 0, 0.4) 40%, /* Gradient to lighter */
-      rgba(0, 0, 0, 0) 100% /* Transparent at the corners */
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.4) 40%,
+      rgba(0, 0, 0, 0) 100%
     );
-    z-index: 1; /* Ensure the overlay is above the background image */
+    z-index: 1;
   }
   
   
   .quiz-page .header-content {
-    position: relative; /* Position relative to overlay */
+    position: relative;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 2;
     margin-top: 4rem;
   }
@@ -150,4 +149,3 @@
       width: 100%;
     }
   }
-  

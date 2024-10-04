@@ -19,6 +19,8 @@ import Article from "./pages/Article";
 import LatestUpdates from "./components/LatestUpdates";
 import ResultPage from "./pages/ResultPage";
 import TestComponent from "./pages/Test";
+import Contact from "./pages/contact_us";
+
 
 function App() {
   return (
@@ -48,6 +50,7 @@ function App() {
           <Route path="/LatestUpdates" element={<LatestUpdates />} />
           <Route path="/test-result" element={<ResultPage />} />
           <Route path="/test" element={<TestComponent />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
         </Routes>
         <Footer />
