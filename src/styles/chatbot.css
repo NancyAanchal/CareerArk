@@ -1,0 +1,12 @@
+.chat-container {
+  width: 65vw;
+  height: auto;
+  padding: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    width: 100vw;
+    padding: 1rem;
+  }
+}

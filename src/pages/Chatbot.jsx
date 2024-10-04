@@ -1,6 +1,7 @@
 import React from "react";
 import { Webchat, WebchatProvider, getClient } from "@botpress/webchat";
 import { buildTheme } from "@botpress/webchat-generator";
+import "../styles/chatbot.css";
 
 const { theme, style } = buildTheme({
   theme: "prism",
@@ -23,13 +24,7 @@ export default function Chatbot() {
         justifyContent: "center",
       }}
     >
-      <div
-        style={{
-          width: "65vw",
-          height: "auto",
-          padding: "40px",
-        }}
-      >
+      <div className="chat-container">
         <style>{`
     ${style}
     .\\#1pvih51 {
