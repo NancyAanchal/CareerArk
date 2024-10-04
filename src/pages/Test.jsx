@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import testData from "../data/aptitudeTest.json";
 import "../styles/test.css";
@@ -10,27 +10,39 @@ const TestComponent = () => {
   const navigate = useNavigate();
   const [categories, setCategories] = useState([]);
   const [timeLeft, setTimeLeft] = useState(30);
-  const handleAnswer = (answer) => {
-    const currentCategory = testData[currentQuestion].category;
 
-    if (!categories.includes(currentCategory)) {
-      setCategories((prevCategories) => [...prevCategories, currentCategory]);
-    }
+  const handleAnswer = useCallback(
+    (answer) => {
+      const currentCategory = testData[currentQuestion].category;
 
-    const currentQ = testData[currentQuestion];
-    setUserAnswers({
-      ...userAnswers,
-      [currentQ.question]: answer,
-    });
-    const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < testData.length) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      navigate("/test-result", {
-        state: { userAnswers: userAnswers, categories: categories },
+      if (!categories.includes(currentCategory)) {
+        setCategories((prevCategories) => [...prevCategories, currentCategory]);
+      }
+
+      const currentQ = testData[currentQuestion];
+      setUserAnswers({
+        ...userAnswers,
+        [currentQ.question]: answer,
       });
-    }
-  };
+      const nextQuestion = currentQuestion + 1;
+      if (nextQuestion < testData.length) {
+        setCurrentQuestion(nextQuestion);
+      } else {
+        navigate("/test-result", {
+          state: { userAnswers: userAnswers, categories: categories },
+        });
+      }
+    },
+    [
+      currentQuestion,
+      userAnswers,
+      categories,
+      setCurrentQuestion,
+      setUserAnswers,
+      setCategories,
+      navigate,
+    ]
+  );
 
   useEffect(() => {
     if (timeLeft === 0) {
@@ -41,7 +53,7 @@ const TestComponent = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [timeLeft]);
+  }, [timeLeft, handleAnswer]);
 
   useEffect(() => {
     setTimeLeft(30);
