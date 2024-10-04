@@ -27,7 +27,11 @@ const TopHeader = () => {
           <a href="/comingsoon">Notification</a>
         </div>
         <div className="contact-button">
+<<<<<<< HEAD
           <a href="/comingsoon">Contact</a>
+=======
+          <a href="/Contact">Contact</a>
+>>>>>>> 3b1a4ce (Added contact us page with paper plane icon and orange theme)
         </div>
         <div className="login-signup">
           <a href="/login">Login</a>
