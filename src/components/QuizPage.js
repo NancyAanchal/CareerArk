@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "../styles/QuizPage.css"; // Import CSS for styling
-import quizzesData from "../data/quizzes.json"; // Import the quizzes data
+import "../styles/QuizPage.css";
+import quizzesData from "../data/quizzes.json";
+import { useNavigate } from "react-router-dom";
 
 const QuizPage = () => {
   const [quizzes, setQuizzes] = useState([]);
+  const navigate = useNavigate();
 
-  // Fetch quizzes data from JSON
   useEffect(() => {
     setQuizzes(quizzesData);
   }, []);
@@ -28,11 +29,24 @@ const QuizPage = () => {
             <h3>{quiz.title}</h3>
             <p>{quiz.description}</p>
             <div className="quiz-details">
-              <div><i className="book-icon"></i> {quiz.questions} Questions</div>
-              <div><i className="clock-icon"></i> {quiz.duration} mins</div>
-              <div><i className="money-icon"></i> <del>₹1000</del> ₹0</div>
+              <div>
+                <i className="book-icon"></i> {quiz.questions} Questions
+              </div>
+              <div>
+                <i className="clock-icon"></i> {quiz.duration} mins
+              </div>
+              <div>
+                <i className="money-icon"></i> <del>₹1000</del> ₹0
+              </div>
             </div>
-            <button className="btn schedule-btn">Schedule Test</button>
+            <button
+              className="btn schedule-btn"
+              onClick={() =>
+                navigate("/test", { state: { title: quiz.title } })
+              }
+            >
+              Take Test
+            </button>
           </div>
         ))}
       </div>

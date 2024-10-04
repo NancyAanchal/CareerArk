@@ -6,7 +6,6 @@ const { theme, style } = buildTheme({
   theme: "prism",
   themeColor: "#ff6a00",
 });
-console.log({ theme });
 const clientId = "ce2d56ee-d7e6-4821-bb60-e025940ff721";
 const config = {
   botName: "Career Cousellor",
