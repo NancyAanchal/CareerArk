@@ -1,0 +1,33 @@
+input,
+select {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 2px #ff7c0a;
+}
+
+select {
+  max-height: 2.65rem;
+}
+
+button {
+  background-color: #ff7c0a;
+  color: #fff;
+  padding: "0.75rem";
+  border-radius: "8px";
+  border: none;
+  cursor: pointer;
+  transition: "background-color 0.2s";
+}
+
+button:hover {
+  background-color: #ff6a00;
+}

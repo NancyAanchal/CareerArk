@@ -1,0 +1,78 @@
+.firecracker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .firecracker-container .spark {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: orange;
+    border-radius: 50%;
+    opacity: 0;
+    animation: spark-animation 3s ease forwards;
+  }
+  
+  @keyframes spark-animation {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(calc(var(--dx) * 300px), calc(var(--dy) * 300px)) scale(0.5);
+    }
+  }
+  
+  .firecracker-container .emoji {
+    position: absolute;
+    font-size: 30px;
+    opacity: 1;
+    animation: emoji-animation 3s ease forwards;
+  }
+  
+  .firecracker-container .emoji1 {
+    animation-delay: 0s;
+    transform-origin: center;
+    --dx: -1;
+    --dy: -1;
+  }
+  
+  .firecracker-container .emoji2 {
+    animation-delay: 0s;
+    transform-origin: center;
+    --dx: 1;
+    --dy: -1;
+  }
+  
+  .firecracker-container .emoji3 {
+    animation-delay: 0s;
+    transform-origin: center;
+    --dx: -1;
+    --dy: 1;
+  }
+  
+  .firecracker-container .emoji4 {
+    animation-delay: 0s;
+    transform-origin: center;
+    --dx: 1;
+    --dy: 1;
+  }
+  
+  @keyframes emoji-animation {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(calc(var(--dx) * 500px), calc(var(--dy) * 500px)) scale(1.5);
+      opacity: 0;
+    }
+  }
+  

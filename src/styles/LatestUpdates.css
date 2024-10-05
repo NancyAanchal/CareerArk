@@ -1,0 +1,98 @@
+.latest-updates-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .latest-updates-container .updates-title {
+    text-align: center;
+    color: #ff9800;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  
+  .latest-updates-container .updates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .latest-updates-container .update-box {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .latest-updates-container .update-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .latest-updates-container .update-title {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .latest-updates-container .update-description {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.3;
+  }
+  
+  .latest-updates-container .update-button {
+    background-color: #ff9800;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .latest-updates-container .update-button:hover {
+    background-color: #e68900;
+  }
+  
+  @media (max-width: 768px) {
+    .latest-updates-container .latest-updates-container {
+      padding: 15px;
+    }
+  
+    .latest-updates-container .updates-title {
+      font-size: 2rem;
+    }
+  
+    .latest-updates-container .update-box {
+      padding: 15px;
+    }
+  
+    .latest-updates-container .update-title {
+      font-size: 1.5rem;
+    }
+  
+    .latest-updates-container .update-button {
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .latest-updates-container .update-box {
+      padding: 10px;
+    }
+  
+    .latest-updates-container .update-title {
+      font-size: 1.3rem;
+    }
+  
+    .latest-updates-container .update-description {
+      font-size: 0.9rem;
+    }
+  
+    .latest-updates-container .update-button {
+      padding: 6px 10px;
+    }
+  }
+  

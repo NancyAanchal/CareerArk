@@ -1,0 +1,109 @@
+.test-container,
+.result-container {
+  display: flex;
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* 2 columns, each taking up 1 fraction of the available space */
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.option {
+  padding: 1rem;
+  font-size: 1.1rem;
+  min-width: 10rem;
+  min-height: 5rem;
+  color: white;
+  background-color: #ff6a00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+.option:hover {
+  background-color: orange;
+}
+
+.option:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 106, 0, 0.7);
+}
+.test-button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #ff6a00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.test-button:hover {
+  background-color: orange;
+}
+
+.test-button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 106, 0, 0.7);
+}
+
+/* Result Page Specific Styles */
+.result-container p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.question-status {
+  color: #e65d00;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+
+.timer {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+button.download-btn {
+  background-color: #ff6a00;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+button.download-btn:hover {
+  background-color: #e65d00;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .test-container,
+  .result-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}

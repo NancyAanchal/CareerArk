@@ -1,0 +1,118 @@
+.form-container {
+    background-image: url('https://img.freepik.com/premium-photo/laptop-origami-ghosts-yellow-background-halloween-theme-top-view_175682-24110.jpg');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 100vh;
+  }
+  
+  .form-container .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 60vw; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust based on content */
+    max-width: 500px;
+    max-height: 80vh; /* Limit the height as needed */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-container label {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    color: #333;
+  }
+  
+  
+  .form-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px; /* Set a minimum height */
+  }
+  
+  
+  .form-container .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container .star {
+    font-size: 30px;
+    color: #bbb8b8;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .form-container .star.checked {
+    color: #ffcc00; /* Yellow color for selected stars */
+  }
+  
+  
+  .form-container input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+  }
+  
+  .form-container button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #000000;
+    font-weight: 600;
+    border: 1px solid orange;
+  }
+  .form-container .rate-institute {
+    margin-top: -10px;
+  display: flex;
+  align-items: center; /* Vertically align items */
+  }
+  .form-container .rate-institute label {
+    margin-right: 10px; /* Add spacing between label and stars */
+  }
+  
+  .form-container .rate-institute .star {
+    margin-right: 3px;
+  }
+  .form-container #name, #institute, #comment{
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  .form-container .button-container {
+    display: flex;
+    justify-content: center;
+  }
