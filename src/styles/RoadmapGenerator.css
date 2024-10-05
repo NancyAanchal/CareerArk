@@ -64,7 +64,7 @@
 .roadmap-generator-container .roadmap-content {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ff5722;
@@ -124,6 +124,7 @@
   border-radius: 10px;
   padding: 10px;
   background-color: #ffffff;
+  margin-bottom: 25px;
 }
 
 .suggested-topics-row {
