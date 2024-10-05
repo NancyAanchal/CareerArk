@@ -73,12 +73,116 @@ body {
   font-weight: bold;
 }
 
+#hamburger-nav {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .top-header {
-    flex-direction: column; /* Stack the nav items vertically on smaller screens */
+    display: none;
   }
-  .top-header div {
-    flex-basis: 100%; /* Make each nav item full-width on smaller screens */
+
+  #hamburger-nav {
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .search-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .search-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .hamburger-icon-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .hamburger-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .hamburger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger-icon span:hover {
+    background-color: #555;
+  }
+
+  .menu-links-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .menu-links a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .show-menu {
+    display: block;
   }
 }
 
