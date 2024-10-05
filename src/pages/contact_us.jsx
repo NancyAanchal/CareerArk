@@ -62,7 +62,7 @@ const ContactUs = () => {
                             <FaEnvelope className="icon email-icon" />
                             <div>
                                 <strong>EMAIL:</strong>
-                                <p>FarmingNow@info.com</p>
+                                <p>CareerArk@info.com</p>
                             </div>
                         </div>
                         <div className="info-item">
