@@ -23,22 +23,22 @@ const RoadmapGenerator = () => {
   const [roadmap, setRoadmap] = useState('');
   const [level, setLevel] = useState('beginner');
   const [recommendation, setRecommendation] = useState('');
-  const [hoveredRow, setHoveredRow] = useState(-1);
   const rowsRef = useRef([]);
 
   useEffect(() => {
     const handleMouseLeave = () => {
-      setHoveredRow(-1);
     };
-    
-    rowsRef.current.forEach((row) => {
+
+    const currentRowsRef = rowsRef.current;
+
+    currentRowsRef.forEach((row) => {
       if (row) {
         row.addEventListener('mouseleave', handleMouseLeave);
       }
     });
 
     return () => {
-      rowsRef.current.forEach((row) => {
+      currentRowsRef.forEach((row) => {
         if (row) {
           row.removeEventListener('mouseleave', handleMouseLeave);
         }
@@ -165,17 +165,14 @@ const RoadmapGenerator = () => {
         </div>
       </form>
 
-      {/* Added Heading for Suggested Topics */}
-      <h2 className="suggested-topics-heading">OR Select any Topic to generate roadmap:</h2>
+      <h2 className="suggested-topics-heading">Select any Topic to generate roadmap</h2>
 
-      {/* Suggested Topics Container */}
       <div className="suggested-topics-container">
         {Array.from({ length: 5 }).map((_, rowIndex) => (
           <div 
             key={rowIndex} 
             className={`suggested-topics-row ${rowIndex % 2 === 0 ? 'left' : 'right'}`}
             ref={(el) => (rowsRef.current[rowIndex] = el)}
-            onMouseEnter={() => setHoveredRow(rowIndex)}
           >
             {suggestedTopics.slice(rowIndex * 7, rowIndex * 7 + 7).map((topic, index) => (
               <div 
@@ -186,7 +183,6 @@ const RoadmapGenerator = () => {
                 {topic}
               </div>
             ))}
-            {/* Duplicate Rows for Continuous Effect */}
             {suggestedTopics.slice(rowIndex * 7, rowIndex * 7 + 7).map((topic, index) => (
               <div 
                 key={`duplicate-${index}`} 
