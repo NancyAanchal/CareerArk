@@ -53,7 +53,7 @@ const ResultPage = () => {
 
   const downloadReport = () => {
     const input = document.querySelector(".result-container");
-    const downloadButton = document.querySelector(".option"); // Select the download button
+    const downloadButton = document.querySelector(".test-button");
 
     downloadButton.style.display = "none";
 
@@ -61,7 +61,7 @@ const ResultPage = () => {
       const imgData = canvas.toDataURL("image/png");
 
       const pdf = new jsPDF();
-      pdf.addImage(imgData, "PNG", 10, 10, 190, 0); // Adjust size and position
+      pdf.addImage(imgData, "PNG", 10, 10, 190, 0);
 
       pdf.save("AptitudeTestReport.pdf");
 
