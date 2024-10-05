@@ -25,26 +25,7 @@ const RoadmapGenerator = () => {
   const [recommendation, setRecommendation] = useState('');
   const rowsRef = useRef([]);
 
-  useEffect(() => {
-    const handleMouseLeave = () => {
-    };
-
-    const currentRowsRef = rowsRef.current;
-
-    currentRowsRef.forEach((row) => {
-      if (row) {
-        row.addEventListener('mouseleave', handleMouseLeave);
-      }
-    });
-
-    return () => {
-      currentRowsRef.forEach((row) => {
-        if (row) {
-          row.removeEventListener('mouseleave', handleMouseLeave);
-        }
-      });
-    };
-  }, []);
+ 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
